@@ -10,6 +10,103 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+/*for form*/
+body {
+  background: #384047;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+form {
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 500px;
+  margin: 50px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 10px;
+}
+form h2 {
+  margin: 0 0 50px 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #666666;
+  border-bottom: solid 1px #e5e5e5;
+}
+form p {
+  margin: 0 0 2em -2.5em;
+  position: relative;
+}
+form input {
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  outline: none;
+  margin: 2em;
+  box-align: center;
+}
+form input[type="text"]{
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  font-size: 1.6em;
+  padding: 0.4em 0.4em;
+  border-radius: 2px;
+}
+form input[type="text"]:focus
+{
+  background: #fff;
+}
+form span {
+  display: block;
+  background: #f9a5a5;
+  padding: 2px 5px;
+  color: #666;
+}
+form input[type="submit"] {
+  background: rgba(148, 186, 101, 0.7);
+  box-shadow: 0 3px 0 0 rgba(123, 163, 73, 0.7);
+  border-radius: 1px;
+  border: none;
+  color: #fff;
+  box-align: center;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  line-height: 1em;
+  max-width: 20em;
+  margin: 0 0 0 0;
+  outline: none;
+  padding: 0.8em 0.8em;
+  text-shadow: 0 1px #68b25b;
+}
+form input[type="submit"]:hover {
+  background: #94af65;
+  text-shadow: 0 1px 3px rgba(70, 93, 41, 0.7);
+}
+form label {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+form label.floatLabel {
+  top: -11px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+/*form closed*/
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -3181,17 +3278,17 @@ textarea.form-control-lg {
 .btn-warning:hover {
   color: #fff;
   background-color: #d9aa00;
-  border-color: ##4d6496;
+  border-color: #4d6496;
 }
 .btn-check:focus + .btn-warning, .btn-warning:focus {
   color: #fff;
   background-color: #d9aa00;
-  border-color: ##4d6496;
+  border-color: #4d6496;
   box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
 }
 .btn-check:checked + .btn-warning, .btn-check:active + .btn-warning, .btn-warning:active, .btn-warning.active, .show > .btn-warning.dropdown-toggle {
   color: #fff;
-  background-color: ##4d6496;
+  background-color: #4d6496;
   border-color: #bf9600;
 }
 .btn-check:checked + .btn-warning:focus, .btn-check:active + .btn-warning:focus, .btn-warning:active:focus, .btn-warning.active:focus, .show > .btn-warning.dropdown-toggle:focus {
@@ -3499,7 +3596,7 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: ##4d6496;
+  color: #4d6496;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -4841,13 +4938,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: ##4d6496;
+  color: #4d6496;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: ##4d6496;
+  color: #4d6496;
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
@@ -6461,7 +6558,7 @@ textarea.form-control-lg {
   color: #869999;
 }
 .link-primary:hover, .link-primary:focus {
-  color: ##4d6496;
+  color: #4d6496;
 }
 
 .link-secondary {
@@ -11735,7 +11832,7 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
-section#contact {
+/*section#contact {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
@@ -11787,7 +11884,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
-}
+}*/
 
 .footer {
   text-align: center;

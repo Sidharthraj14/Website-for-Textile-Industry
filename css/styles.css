@@ -23,7 +23,7 @@ body {
     font-size: 10px;
 }
 
-#button {
+/*#button {
     background-color: #869999;
     font-size: 1.2em;
     margin: auto;
@@ -11419,7 +11419,7 @@ header.masthead .masthead-heading {
         margin-bottom: 2rem;
     }
     header.masthead .masthead-heading {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 700;
         line-height: 4.5rem;
         margin-bottom: 4rem;
